@@ -59,7 +59,7 @@ def main() -> int:
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(line + "\n")
-    print(f"wrote {len(line)} chars to {out_path}")
+    print(f"wrote {len(line)} chars to {out_path}: {line}")
     return 0
 
 
